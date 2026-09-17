@@ -27,8 +27,38 @@
     --bg-primary:#1e1e1c;--bg-secondary:#2a2a28;--bg-tertiary:#242422;
     --text-primary:#f0ede8;--text-secondary:#999990;
     --border:rgba(255,255,255,0.12);--border-md:rgba(255,255,255,0.22);
-    --accent-light:#3a1a1a;--green-light:#1a2e10;--amber-light:#2e1e08;--blue-light:#0d1e35;
+    --accent:#E07070;           /* rouge plus clair en dark pour lisibilité */
+    --accent-light:#3a1a1a;
+    --accent-border:#7a3030;
+    --green:#7EC85A;            /* vert plus clair */
+    --green-light:#1a2e10;
+    --amber:#F0B865;            /* ambré plus clair */
+    --amber-light:#2e1e08;
+    --amber-border:#7a5018;
+    --blue:#6AABF0;             /* bleu plus clair */
+    --blue-light:#0d1e35;
   }
+  /* Textes sur fonds colorés : forcer lisibilité */
+  .rbadge{color:#F0C0C0 !important;}
+  .cbadge{color:#A8D4F8 !important;}
+  .role-card-name{color:#E07070;}
+  .role-card.mdj-card .role-card-name{color:#6AABF0;}
+  .role-card-label{color:#999990;}
+  .role-card.mdj-card .role-card-label{color:#6AABF0;opacity:.9;}
+  .ctr-tab.active{color:#F0C0C0 !important;}
+  .save-btn.tts-on{color:#6AABF0 !important;border-color:#2a4a6a !important;}
+  .mdj-label{color:#6AABF0 !important;}
+  /* Badges statut */
+  .status-waiting{background:#1a2e10;color:#7EC85A;}
+  .status-playing{background:#0d1e35;color:#6AABF0;}
+  /* Tableau totaux */
+  #score-table tr.tr-total td{color:#F0B865 !important;}
+  /* Podium */
+  .podium-row.first{background:#2e1e08;border-color:#7a5018;}
+  /* Textes hardcodés rouge foncé dans les blocs de contrats */
+  .ig{color:#7EC85A;}
+  .ir{color:#F0C0C0;}
+  .ia{color:#F0B865;}
 }
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:var(--font);background:var(--bg-tertiary);color:var(--text-primary);min-height:100vh;padding:0 0 3rem}
